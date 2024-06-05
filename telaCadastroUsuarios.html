@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Cadastro Usuários</title>
+    <link rel="shortcut icon" type="imagex/png" href="assets/icon/chess-queen-alt.ico">
+</head>
+<body>
+    <div class="content">
+
+        <form id="form">
+            <div class="titulo">
+                <h1>Cadastro de Usuários</h1>
+                <div class="barra-horizontal"></div>
+            </div>
+            <div class="input-group">
+                <label for="nome">Nome</label>
+                <input type="text" placeholder="Digite o nome" class="inputs required">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" placeholder="Digite o sobrenome" class="inputs required">
+            </div>
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="Digite o e-mail" class="inputs required">
+                <label for="telefone">Telefone</label>
+                <input type="tel" placeholder="(xx)xxxxx-xxxx" class="inputs required">
+            </div>
+            <div class="input-group">
+                <label for="organizacao">Organização</label >
+                <input type="text" placeholder="Selecione a empresa" class="inputs required">
+            </div>
+            <div class="input-group">
+                <label for="cargo">Cargo</label>
+                <select name="cargo" class="inputs required">
+                    <option value="null"></option>
+                    <option value="estagiario">Estagiário</option>
+                    <option value="assistente">Assistente</option>
+                    <option value="analista">Analista</option>
+                    <option value="coordenador">Coordenador</option>
+                    <option value="gerente">Gerente</option>
+                    <option value="superintendente">Superintendente</option>
+                    <option value="diretor">Diretor</option>
+                    <option value="presidente">Presidente</option>
+                    <option value="ceo">CEO</option>
+                </select>
+                <label for="departamento">Departamento</label>
+                <select name="departamento" class="inputs required">
+                    <option value="null"></option>
+                    <option value="financeiro">Financeiro</option>
+                    <option value="administrativo">Administrativo</option>
+                    <option value="contabil">Contábil</option>
+                    <option value="marketingEVendas">Marketing e Vendas</option>
+                    <option value="producao">Produção</option>
+                    <option value="logistica">Logística</option>
+                    <option value="tecnologiaInformacao">Tecnologia da Informação</option>
+                    <option value="juridico">Jurídico</option>
+                    <option value="compras">Compras</option>
+                    <option value="atendimentoCliente">Atendimento ao Cliente</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="senha">Senha</label>
+                <input type="password" placeholder="Digite a sua senha" class="inputs required">
+                <label for="confirmacaoSenha">Confirme a sua senha</label>
+                <input type="password" placeholder="Confirme a sua senha" class="inputs required">
+            </div>
+            <button type="submit">Salvar</button>
+        </form>
+    </div>
+</body>
+</html>

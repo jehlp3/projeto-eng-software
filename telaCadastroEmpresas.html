@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Cadastro Empresas</title>
+    <link rel="shortcut icon" type="imagex/png" href="assets/icon/chess-queen-alt.ico">
+</head>
+
+<body>
+
+    <div class="content">
+
+        <form id="form">
+            <div class="titulo">
+                <h1>Cadastro de Empresas</h1>
+                <div class="barra-horizontal"></div>
+            </div>
+            <div class="input-group">
+                <label for="nomeOrganizacao">Nome Organização</label>
+                <input type="text" placeholder="Digite o nome da empresa" class="inputs required">
+            </div>
+
+            <div class="input-group">
+                <label for="cep">CEP</label>
+                <input type="text" placeholder="Digite o CEP" class="inputs required">
+
+                <label for="rua">Rua</label>
+                <input type="text" placeholder="Digite a rua" class="inputs required">
+
+                <label for="numero">Nº</label>
+                <input type="text" placeholder="Digite o número" class="inputs required">
+            </div>
+            <div class="input-group">
+                <label for="bairro">Bairro</label>
+                <input type="text" placeholder="Digite o bairro" class="inputs required">
+
+                <label for="Cidade">Cidade</label>
+                <select name="cidades" class="inputs required">
+                    <option value="saoPaulo" selected>São Paulo</option>
+                    <option value="embuDasArtes">Embu das Artes</option>
+                    <option value="novaFriburgo">Nova Friburgo</option>
+                    <option value="beloHorizonte">Belo Horizonte</option>
+                    <option value="rioDeJaneiro">Rio de Janeiro</option>
+                    <option value="campinas">Campinas</option>
+                </select>
+
+                <label for="Estado">Estado</label>
+                <select name="estados" class="inputs required">
+                    <option value="sp" selected>SP</option>
+                    <option value="mg">MG</option>
+                    <option value="rj">RJ</option>
+                </select>
+                
+            </div>
+            <div>
+                <label>Usuários administradores</label>
+                <button type="button">Adicionar</button>
+            </div>
+
+            <table id="admsAplicativo">
+                <thead>
+                    <tr>
+                        <th>E-mail</th>
+                        <th>Nome</th>
+                        <th>Cargo</th>
+                        <th>Departamento</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>joaosilveira@empresa.com</td>
+                        <td>João Silveira Siqueira</td>
+                        <td>Superintendente</td>
+                        <td>TI</td>
+                        <td>
+                            <button type="reset">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>berenicedivina@empresa.com</td>
+                        <td>Berenice da Cruz Divina</td>
+                        <td>Gerente</td>
+                        <td>TI</td>
+                        <td>
+                            <button type="reset">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>OsvaldoJefferson@empresa.com</td>
+                        <td>Osvaldo Jefferson</td>
+                        <td>Diretor</td>
+                        <td>Administrativo</td>
+                        <td>
+                            <button type="reset">Excluir</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <button type="submit">Salvar</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
