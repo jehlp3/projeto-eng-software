@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Chamados</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" type="imagex/png" href="assets/icon/chess-queen-alt.ico">
+</head>
+
+<body>
+    <div class="content">
+    <form id="form">
+        <div class="titulo" >
+            <h1>Abrir Chamado</h1>
+            <div class="barra-horizontal"></div>
+        </div>
+        <div class="input-group">
+            <label for="tipoSolicitacao">Tipo de Solicitação</label>
+            <select name="tipoSolicitacao" class="inputs required" >
+                <option value="" selected>Selecione o tipo de solicitação</option>
+                <option value="suporteTI">Requisição suporte TI</option>
+                <option value="solicitacaoSistema">Solicitação acesso à sistemas</option>
+                <option value="solicitacaoVpn">Obter VPN</option>
+                <option value="solicitacaoPrivilegiada">Requisição acesso privilegiado</option>
+                <option value="reporteIncidenteSistema">Reportar problema em um sistema</option>
+                <option value="reinicializacaoSenha">Reinicialização de senha</option>
+                <option value="solicitacaoWifi">Obter acesso Wifi</option>
+                <option value="solicitacaoHardware">Requisição de Hardware</option>
+                <option value="solicitacaoOutro">Outro</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="anexoIncidente">Anexos</label>
+            <input type="file" class="inputs required">
+        </div>
+        <div class="input-group">
+            <label for="dataLimite">Data limite</label>
+            <input type="date" class="inputs required">
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="descricao">Descrição</label>
+            <textarea name="descricao" class="inputs required" placeholder="Descreva o incidente aqui"></textarea>
+        </div>
+        <div class="input-group">
+            <label for="requisitantePrincipal">Requisitante</label>
+            <select name="requisitantePrincipal" class="inputs required"></select>
+        </div>
+        <div class="input-group">
+            <label for="requisitanteAuxiliar">Requisitante auxiliar</label>
+            <select name="requisitanteAuxiliar" class="inputs required"></select>
+        </div>
+        <div class="input-group">
+            <label for="responsavelResolucao">Responsável</label>
+            <select name="responsavelResolucao" class="inputs required">
+                <option value="tecnicoTI">Técnico TI</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="criticidade">Criticidade</label>
+            <select name="criticidade" class="inputs required">
+                <option value="" selected>Selecione a criticidade</option>
+                <option value="critico">Crítico</option>
+                <option value="alta">Alta</option>
+                <option value="media">Média</option>
+                <option value="baixa">Baixa</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="impacto">Impacto</label>
+            <select name="impacto" class="inputs required">
+                <option value="" selected>Selecione o impacto </option>
+                <option value="geral">Geral</option>
+                <option value="conjuntoSistemas">Conjunto de sistemas</option>
+                <option value="sistemaEspecifico">Sistema específico</option>
+                <option value="local">Local</option>
+            </select>
+        </div>
+        <button type="reset">Cancelar</button>
+        <button type="submit">Criar</button>
+
+    </form>
+</div>
+</body>
+
+</html>
