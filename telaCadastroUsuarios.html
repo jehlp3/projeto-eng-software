@@ -17,24 +17,24 @@
             </div>
             <div class="input-group">
                 <label for="nome">Nome</label>
-                <input type="text" placeholder="Digite o nome" class="inputs required">
+                <input id="nome" type="text" placeholder="Digite o nome" class="inputs required">
                 <label for="sobrenome">Sobrenome</label>
-                <input type="text" placeholder="Digite o sobrenome" class="inputs required">
+                <input id="sobrenome" type="text" placeholder="Digite o sobrenome" class="inputs required">
             </div>
             <div class="input-group">
                 <label for="email">E-mail</label>
-                <input type="email" placeholder="Digite o e-mail" class="inputs required">
+                <input id="email" type="email" placeholder="Digite o e-mail" class="inputs required">
                 <label for="telefone">Telefone</label>
-                <input type="tel" placeholder="(xx)xxxxx-xxxx" class="inputs required">
+                <input id="telefone" type="tel" placeholder="(xx)xxxxx-xxxx" class="inputs required">
             </div>
             <div class="input-group">
                 <label for="organizacao">Organização</label >
-                <input type="text" placeholder="Selecione a empresa" class="inputs required">
+                <input id="organizacao" type="text" placeholder="Selecione a empresa" class="inputs required">
             </div>
             <div class="input-group">
                 <label for="cargo">Cargo</label>
-                <select name="cargo" class="inputs required">
-                    <option value="null"></option>
+                <select id="cargo" name="cargo" class="inputs required">
+                    <option value="">Selecione</option>
                     <option value="estagiario">Estagiário</option>
                     <option value="assistente">Assistente</option>
                     <option value="analista">Analista</option>
@@ -46,8 +46,8 @@
                     <option value="ceo">CEO</option>
                 </select>
                 <label for="departamento">Departamento</label>
-                <select name="departamento" class="inputs required">
-                    <option value="null"></option>
+                <select id="departamento" name="departamento" class="inputs required">
+                    <option value="">Selecione</option>
                     <option value="financeiro">Financeiro</option>
                     <option value="administrativo">Administrativo</option>
                     <option value="contabil">Contábil</option>
@@ -63,9 +63,9 @@
             </div>
             <div class="input-group">
                 <label for="senha">Senha</label>
-                <input type="password" placeholder="Digite a sua senha" class="inputs required">
+                <input id="senha" type="password" placeholder="Digite a sua senha" class="inputs required">
                 <label for="confirmacaoSenha">Confirme a sua senha</label>
-                <input type="password" placeholder="Confirme a sua senha" class="inputs required">
+                <input id="confirmacaoSenha" type="password" placeholder="Confirme a sua senha" class="inputs required">
             </div>
             <button type="submit">Salvar</button>
         </form>
